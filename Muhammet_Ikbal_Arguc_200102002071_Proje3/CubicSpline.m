@@ -1,11 +1,11 @@
-bolunmusAralik=linspace(0,2*pi,360);
+bolunmusAralik=linspace(0,2*pi,10000);
 pFonksiyonu=@ (a) (abs(cos(3*a/4))^8 + abs(sin(3*a/4))^8)^(-1/4);
 pFonkDegerler=[];
 for i=bolunmusAralik
     pFonkDegerler(end+1)=pFonksiyonu(i);
 end
 [listeson]=cubicsplinetam(bolunmusAralik,pFonkDegerler);
-plot(bolunmusAralik,listeson)
+%plot(bolunmusAralik,listeson)
 
 function [listeson]=cubicsplinetam(bolunmusAralik,pFonkDegerler)
     listeson=[];
