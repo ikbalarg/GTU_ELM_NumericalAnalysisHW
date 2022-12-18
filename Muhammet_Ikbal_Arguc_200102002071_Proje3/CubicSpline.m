@@ -1,3 +1,6 @@
+%Burada hesaplanan kübik spline eş aralıklarla parçalanmış noktalar içindir
+% Yani ardışık her bir iki nokta arasındaki fark sabit olmalıdır.
+%Bu fonksiyonlar yukarıdaki şartlar uygun olduğunda kullanılabilir.
 bolunmusAralik=linspace(0,2*pi,10000);
 pFonksiyonu=@ (a) (abs(cos(3*a/4))^8 + abs(sin(3*a/4))^8)^(-1/4);
 pFonkDegerler=[];
